@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#1c110c",
+                        "on-primary-container": "#554300",
+                        "outline-variant": "#4d4635",
+                        "surface-container-high": "#342721",
+                        "inverse-primary": "#735c00",
+                        "error": "#ffb4ab",
+                        "tertiary": "#e2cba1",
+                        "secondary": "#ffb68c",
+                        "on-primary": "#3c2f00",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#251913",
+                        "surface-bright": "#453630",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#753401",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#160c07",
+                        "on-tertiary-fixed-variant": "#544525",
+                        "inverse-on-surface": "#3b2d27",
+                        "tertiary-fixed-dim": "#dac49b",
+                        "primary-fixed": "#ffe088",
+                        "inverse-surface": "#f5ded5",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-highest": "#40322c",
+                        "surface-dim": "#1c110c",
+                        "on-tertiary-container": "#524323",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#fb9f66",
+                        "surface-tint": "#e9c349",
+                        "outline": "#99907c",
+                        "on-primary-fixed-variant": "#574500",
+                        "tertiary-container": "#c5b088",
+                        "on-tertiary-fixed": "#251a01",
+                        "on-surface": "#f5ded5",
+                        "surface-variant": "#40322c",
+                        "secondary-fixed": "#ffdbc9",
+                        "secondary-container": "#753401",
+                        "primary-container": "#d4af37",
+                        "on-tertiary": "#3c2f11",
+                        "on-secondary-fixed": "#321200",
+                        "tertiary-fixed": "#f7e0b5",
+                        "error-container": "#93000a",
+                        "on-secondary": "#532200",
+                        "on-background": "#f5ded5",
+                        "primary": "#f2ca50",
+                        "background": "#1c110c",
+                        "surface-container": "#291d17",
+                        "secondary-fixed-dim": "#ffb68c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Newsreader"],
+                        "label": ["Newsreader"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30 selection:text-primary">
+<main class="min-h-screen flex flex-col md:flex-row overflow-hidden">
+<!-- Left Side: Atmospheric Branding -->
+<section class="relative w-full md:w-1/2 min-h-[409px] md:min-h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4] contrast-125" data-alt="Close-up of a vintage black typewriter in a moody, dimly lit room with warm dust motes and shadows of old bookshelves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSwxwxdD4hIcmydgt43ByjVin-RfItB3IgqXpEpqEJ8ctag--VTYraSbKwwLBkIWQ5InlLPnSaLnWtTsIRX96KU8Zqx9pp4r5IoPlOV-bdvhQ9LL14gACpgwInQFSCxbpXrh1CI6j0LR6nxrZ-hKVPHXNfG_dGDawTlr2GpGNfzHrtgTOcR_ybDWt9ykGuPk8yZfyxnBCgRAGOGnG69Rdr3WOOntRJIi7yNZFMF18eSTu3_nye8pRPW03UTC4lodMknBbqcirvqiA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-surface"></div>
+</div>
+<div class="relative z-10 p-12 text-center md:text-left max-w-xl">
+<div class="mb-8 opacity-60">
+<span class="material-symbols-outlined text-primary text-5xl">lock</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-light tracking-tighter leading-none mb-4 text-primary">
+                    The Archivist's <br/>Cipher
+                </h1>
+<p class="text-on-surface-variant italic text-xl max-w-md leading-relaxed">
+                    "Every record is a ghost waiting for the right key to speak once more."
+                </p>
+<div class="mt-12 w-24 h-[1px] bg-primary/40 hidden md:block"></div>
+</div>
+</section>
+<!-- Right Side: Forms -->
+<section class="w-full md:w-1/2 bg-surface-container-lowest flex items-center justify-center p-6 md:p-24 relative">
+<div class="w-full max-w-md space-y-16">
+<!-- Recall Identity (Login) -->
+<div class="space-y-8">
+<header>
+<h2 class="text-3xl font-normal text-on-surface tracking-tight uppercase">Recall Identity</h2>
+<div class="w-12 h-1 bg-surface-container-highest mt-2"></div>
+</header>
+<form class="space-y-6">
+<div class="group relative border-b border-outline-variant focus-within:border-primary transition-all duration-500">
+<label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-1 opacity-60">Asset Designation</label>
+<input class="w-full bg-transparent border-none p-0 pb-2 text-lg focus:ring-0 placeholder:text-surface-container-highest font-light" placeholder="e.g. A-7042" type="text"/>
+</div>
+<div class="group relative border-b border-outline-variant focus-within:border-primary transition-all duration-500">
+<label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-1 opacity-60">Access Key</label>
+<input class="w-full bg-transparent border-none p-0 pb-2 text-lg focus:ring-0 placeholder:text-surface-container-highest font-light" placeholder="••••••••" type="password"/>
+</div>
+<div class="flex items-center justify-between pt-4">
+<button class="group flex items-center gap-3 bg-primary text-on-primary px-8 py-4 text-sm font-bold tracking-widest uppercase hover:bg-primary-fixed-dim transition-colors duration-300" type="submit">
+                                Enter Archive
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<a class="text-xs text-on-surface-variant hover:text-primary transition-colors italic" href="#">Lost Cipher?</a>
+</div>
+</form>
+</div>
+<!-- Separation Line -->
+<div class="flex items-center gap-4 py-4">
+<div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+<span class="text-[10px] uppercase tracking-[0.3em] text-on-surface-variant opacity-40 italic">or</span>
+<div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+</div>
+<!-- Enlist New Asset (Registration) -->
+<div class="space-y-8">
+<header>
+<h2 class="text-3xl font-normal text-on-surface tracking-tight uppercase">Enlist New Asset</h2>
+<p class="text-sm text-on-surface-variant mt-2 italic">Submission of credentials for Sector 7-B clearance.</p>
+</header>
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="group relative border-b border-outline-variant focus-within:border-primary transition-all duration-500">
+<label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-1 opacity-60">Surname</label>
+<input class="w-full bg-transparent border-none p-0 pb-2 text-lg focus:ring-0" type="text"/>
+</div>
+<div class="group relative border-b border-outline-variant focus-within:border-primary transition-all duration-500">
+<label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-1 opacity-60">Sector</label>
+<input class="w-full bg-transparent border-none p-0 pb-2 text-lg focus:ring-0 placeholder:text-surface-container-highest" placeholder="7-B" type="text"/>
+</div>
+</div>
+<div class="group relative border-b border-outline-variant focus-within:border-primary transition-all duration-500">
+<label class="block text-xs text-on-surface-variant uppercase tracking-widest mb-1 opacity-60">Registry Email</label>
+<input class="w-full bg-transparent border-none p-0 pb-2 text-lg focus:ring-0" type="email"/>
+</div>
+<div class="pt-4">
+<button class="w-full border border-primary/40 text-primary px-8 py-4 text-sm font-bold tracking-widest uppercase hover:bg-primary/10 transition-all duration-300" type="submit">
+                                Begin Ritual Induction
+                            </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Footer Meta -->
+<footer class="absolute bottom-8 left-0 w-full px-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-on-surface-variant opacity-40 uppercase tracking-widest">
+<span>© 1892 The Deep Archive</span>
+<span class="hidden md:block">Classified Protocols Apply - Sector 7-B Clearance Required</span>
+<div class="flex gap-4 mt-2 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terminal Access</a>
+</div>
+</footer>
+</section>
+</main>
+<!-- Grain Overlay (Subtle Aesthetic Touch) -->
+<div class="fixed inset-0 pointer-events-none z-50 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/p6-mini.png')]"></div>
+</body></html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Archive - Mission Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#1c110c",
+                        "on-primary-container": "#554300",
+                        "outline-variant": "#4d4635",
+                        "surface-container-high": "#342721",
+                        "inverse-primary": "#735c00",
+                        "error": "#ffb4ab",
+                        "tertiary": "#e2cba1",
+                        "secondary": "#ffb68c",
+                        "on-primary": "#3c2f00",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#251913",
+                        "surface-bright": "#453630",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#753401",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-lowest": "#160c07",
+                        "on-tertiary-fixed-variant": "#544525",
+                        "inverse-on-surface": "#3b2d27",
+                        "tertiary-fixed-dim": "#dac49b",
+                        "primary-fixed": "#ffe088",
+                        "inverse-surface": "#f5ded5",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-highest": "#40322c",
+                        "surface-dim": "#1c110c",
+                        "on-tertiary-container": "#524323",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#fb9f66",
+                        "surface-tint": "#e9c349",
+                        "outline": "#99907c",
+                        "on-primary-fixed-variant": "#574500",
+                        "tertiary-container": "#c5b088",
+                        "on-tertiary-fixed": "#251a01",
+                        "on-surface": "#f5ded5",
+                        "surface-variant": "#40322c",
+                        "secondary-fixed": "#ffdbc9",
+                        "secondary-container": "#753401",
+                        "primary-container": "#d4af37",
+                        "on-tertiary": "#3c2f11",
+                        "on-secondary-fixed": "#321200",
+                        "tertiary-fixed": "#f7e0b5",
+                        "error-container": "#93000a",
+                        "on-secondary": "#532200",
+                        "on-background": "#f5ded5",
+                        "primary": "#f2ca50",
+                        "background": "#1c110c",
+                        "surface-container": "#291d17",
+                        "secondary-fixed-dim": "#ffb68c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Newsreader"],
+                        "label": ["Newsreader"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Newsreader', serif; }
+        .folder-tab { clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<div class="flex h-screen overflow-hidden bg-[radial-gradient(circle_at_center,_#251913_0%,_#160c07_100%)]">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col h-screen py-8 bg-[#160c07] text-[#f2ca50] w-64 shadow-[30px_0_60px_rgba(0,0,0,0.4)] z-20">
+<div class="px-8 mb-12">
+<div class="text-xl font-semibold text-[#f2ca50] tracking-widest">Archivist</div>
+<div class="text-xs opacity-60 italic">Sector 7-B</div>
+</div>
+<nav class="flex-1 flex flex-col space-y-2">
+<a class="flex items-center text-[#f2ca50] font-bold border-l-4 border-[#f2ca50] pl-4 py-3 hover:bg-[#40322c]/20 transition-all duration-500 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-4">door_back</span>
+<span>Vaults</span>
+</a>
+<a class="flex items-center text-[#d0c5af] pl-5 opacity-60 py-3 hover:text-[#f2ca50] hover:bg-[#40322c]/20 transition-all duration-500 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-4">book_2</span>
+<span>Manuscripts</span>
+</a>
+<a class="flex items-center text-[#d0c5af] pl-5 opacity-60 py-3 hover:text-[#f2ca50] hover:bg-[#40322c]/20 transition-all duration-500 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-4">description</span>
+<span>Ledgers</span>
+</a>
+<a class="flex items-center text-[#d0c5af] pl-5 opacity-60 py-3 hover:text-[#f2ca50] hover:bg-[#40322c]/20 transition-all duration-500 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-4">key</span>
+<span>Cipher</span>
+</a>
+<a class="flex items-center text-[#d0c5af] pl-5 opacity-60 py-3 hover:text-[#f2ca50] hover:bg-[#40322c]/20 transition-all duration-500 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-4">admin_panel_settings</span>
+<span>Staff Only</span>
+</a>
+</nav>
+<div class="px-8 pt-6 border-t border-[#40322c]/30">
+<button class="w-full py-3 bg-primary text-on-primary font-bold tracking-widest hover:bg-primary-fixed-dim transition-colors">
+                    Begin Ritual
+                </button>
+</div>
+<div class="mt-auto px-5 py-4 space-y-2">
+<a class="flex items-center text-[#d0c5af] opacity-60 hover:text-[#f2ca50] transition-colors text-sm" href="#">
+<span class="material-symbols-outlined mr-4 text-lg">verified_user</span> Security
+                </a>
+<a class="flex items-center text-[#d0c5af] opacity-60 hover:text-[#f2ca50] transition-colors text-sm" href="#">
+<span class="material-symbols-outlined mr-4 text-lg">logout</span> Log Out
+                </a>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="flex-1 flex flex-col relative overflow-y-auto">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-10 flex justify-between items-center w-full px-6 py-4 bg-[#1c110c] text-[#f2ca50] font-serif tracking-widest uppercase shadow-none">
+<div class="text-2xl font-bold tracking-[0.2em] text-[#f2ca50]">The Archive</div>
+<div class="flex items-center space-x-8">
+<div class="hidden lg:flex space-x-6 text-sm">
+<a class="text-[#f2ca50] border-b border-[#f2ca50] pb-1" href="#">Dossiers</a>
+<a class="text-[#d0c5af] opacity-70 hover:opacity-100 transition-opacity" href="#">Chronicles</a>
+<a class="text-[#d0c5af] opacity-70 hover:opacity-100 transition-opacity" href="#">Records</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#40322c] p-2 transition-colors">lock</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#40322c] p-2 transition-colors">history</span>
+</div>
+</div>
+</header>
+<div class="bg-[#40322c] h-[1px] w-full"></div>
+<!-- Content -->
+<div class="p-8 md:p-12 max-w-7xl mx-auto w-full">
+<div class="mb-12 text-center">
+<h1 class="text-5xl md:text-7xl font-light tracking-[0.3em] uppercase text-on-surface mb-4">Available Dossiers</h1>
+<p class="text-on-surface-variant italic max-w-2xl mx-auto">Select a restricted case file to initiate deep-dive intelligence gathering or authorize direct tactical entry.</p>
+</div>
+<!-- Bento Grid of Case Files -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Case File: Murder Mystery -->
+<div class="group relative bg-surface-container-low p-6 flex flex-col h-full border-t-8 border-secondary-container shadow-[20px_20px_40px_rgba(0,0,0,0.5)] transition-transform hover:-translate-y-2">
+<div class="absolute -top-4 left-0 bg-secondary-container text-on-secondary-container px-4 py-1 text-xs uppercase tracking-tighter folder-tab font-bold">Classified</div>
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" data-alt="Close-up of an antique typewriter on a dark wooden desk with dramatic shadows and a single spotlight highlighting the keys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi0ym8yoBBO6xi_fO5zkF1tv9zxhnmnSyJHEhNliWjHpWl5-JF6CIpeRT9rwNmBuNVdGGqG099SG91c3l8xFmpcF7c2bYow5i2Y-cBRDIXpIVt_YB9AvZxeQDUOlJTNDu-UcfrQ5oxMu7zp-I_0S1PV_iVchZujx6fPKpTYSeVt3G_wVcOuFBZa-VoSR-WIw6KRm_ArCAW7vvP2PpgpKZyfSQ5WBbsYPGED4EfFUlA-YHWSP0dwGsdTGRkuphFs2JWdAGbRawNOVU"/>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-semibold text-primary mb-2 tracking-tight">Murder Mystery</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed italic">A high-profile casualty in a secluded manor. The ink is still wet on the suspect list.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-2 border border-outline-variant text-primary text-sm tracking-widest hover:bg-primary/10 transition-colors uppercase">Review Intel</button>
+<button class="w-full py-3 bg-primary text-on-primary font-bold text-sm tracking-widest hover:bg-primary-fixed-dim transition-colors uppercase">Authorize Entry</button>
+</div>
+</div>
+<!-- Case File: Treasure Hunt -->
+<div class="group relative bg-surface-container-low p-6 flex flex-col h-full border-t-8 border-primary-container shadow-[20px_20px_40px_rgba(0,0,0,0.5)] transition-transform hover:-translate-y-2">
+<div class="absolute -top-4 left-0 bg-primary-container text-on-primary-container px-4 py-1 text-xs uppercase tracking-tighter folder-tab font-bold">High Priority</div>
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" data-alt="A yellowed ancient nautical map with compass drawings and frayed edges laid out on a dark mahogany table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXMWuId5DTfQ5JYRWvbwEk_jeuoJHzno-01UJnuhiLUtlh734TuxYqZgVdP7Vrv8eYqKw_6CSXeY3Zv_cC8evUg4qv4u7vURTxsYAR70XMepThVSRZnZFJotbFmWX3xlpuWFoDoHZaoPiR_lJpJTAR302IpaENQOQ9KpsPZmPiwwQhXD47_hJdxEUBwgTNT_BdF7cORM045Zc55c-pusDMwotwA6z3QsxB_2sOjy0FVP8zY_ps-_nugAvympfUPyuUcvWsEqvCtpE"/>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-semibold text-primary mb-2 tracking-tight">Treasure Hunt</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed italic">Decipher the Cartographer's last riddle to unearth what was buried in the 17th century.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-2 border border-outline-variant text-primary text-sm tracking-widest hover:bg-primary/10 transition-colors uppercase">Review Intel</button>
+<button class="w-full py-3 bg-primary text-on-primary font-bold text-sm tracking-widest hover:bg-primary-fixed-dim transition-colors uppercase">Authorize Entry</button>
+</div>
+</div>
+<!-- Case File: Abandoned Hospital -->
+<div class="group relative bg-surface-container-low p-6 flex flex-col h-full border-t-8 border-error-container shadow-[20px_20px_40px_rgba(0,0,0,0.5)] transition-transform hover:-translate-y-2">
+<div class="absolute -top-4 left-0 bg-error-container text-on-error-container px-4 py-1 text-xs uppercase tracking-tighter folder-tab font-bold">Hazardous</div>
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" data-alt="Eerie perspective of a dimly lit, decaying hospital corridor with peeling paint and flickering overhead fluorescent lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWQZsPqq_RUM_ksLbvYBjYubk_rFDR13lFxA0qsnyCFA8NzDVxtfyRLBPWbqYmAqNDsZGmmSNNAFRIUEYGVrhkDzIwxYcmyBXTQEoAseuT28YvQkZkpy9bgPLQAIpwxIa0bHJEfWXibPcnOIF-k-BvSP3R3R7L_PXsMaZ2NwDF19Y08NBM5E3WR1za58otODWLXWDPwS-OBWAzHdaUsy-7Rp_R9OhtwREGgjxK9wjON3JZ43tIbOKEIUsewK6ubXnM0Whov6c8Suk"/>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-semibold text-primary mb-2 tracking-tight">Abandoned Hospital</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed italic">Sector 4 was sealed for a reason. Trace the origins of the failed 'Lazarus' protocol.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-2 border border-outline-variant text-primary text-sm tracking-widest hover:bg-primary/10 transition-colors uppercase">Review Intel</button>
+<button class="w-full py-3 bg-primary text-on-primary font-bold text-sm tracking-widest hover:bg-primary-fixed-dim transition-colors uppercase">Authorize Entry</button>
+</div>
+</div>
+<!-- Case File: Space Station -->
+<div class="group relative bg-surface-container-low p-6 flex flex-col h-full border-t-8 border-on-tertiary-fixed-variant shadow-[20px_20px_40px_rgba(0,0,0,0.5)] transition-transform hover:-translate-y-2">
+<div class="absolute -top-4 left-0 bg-on-tertiary-fixed-variant text-tertiary-fixed px-4 py-1 text-xs uppercase tracking-tighter folder-tab font-bold">Outpost 9</div>
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" data-alt="Retro-futuristic cockpit of a spacecraft with amber CRT displays and rows of analog toggle switches and buttons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb61v-oOBigVVwjMq5A-wOGwCND0nv8O0royJx0WgbHUs4gHxtOI_YrYeA32UqKkZjEz7qFoD4YmQ2uUMpfSU4kbtAhjC_OZ9t4LAv31eS5Lm36VISdHH67LM6_BeB6mtNZRXs--t80tJsDZJgMmeGZNHBhnkytS_gmwA4yBSYdNpPdla36Nu32haI8kwImgu1jV-HqM-uZ68lE6fyRgKFXMzoCV37nO5zjmLZCbIH0j6wK476LF-xUD_JF79SMFsNbFLE55JoFZc"/>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-semibold text-primary mb-2 tracking-tight">Space Station</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed italic">The silent orbit of Helios-1. Retrieve the central black box before atmospheric re-entry.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-2 border border-outline-variant text-primary text-sm tracking-widest hover:bg-primary/10 transition-colors uppercase">Review Intel</button>
+<button class="w-full py-3 bg-primary text-on-primary font-bold text-sm tracking-widest hover:bg-primary-fixed-dim transition-colors uppercase">Authorize Entry</button>
+</div>
+</div>
+</div>
+<!-- Footer Component -->
+<footer class="mt-24 border-t border-[#40322c]/30 flex flex-col md:flex-row justify-between items-center py-8 w-full font-serif italic text-sm tracking-tight bg-[#160c07] text-[#d4af37]">
+<div class="opacity-80 mb-4 md:mb-0">© 1892 The Deep Archive - Classified Protocols Apply</div>
+<div class="flex space-x-8">
+<a class="text-[#d0c5af] opacity-50 hover:text-[#f2ca50] underline transition-opacity duration-200" href="#">Privacy Policy</a>
+<a class="text-[#d0c5af] opacity-50 hover:text-[#f2ca50] underline transition-opacity duration-200" href="#">Terminal Access</a>
+<a class="text-[#d0c5af] opacity-50 hover:text-[#f2ca50] underline transition-opacity duration-200" href="#">Report Breach</a>
+</div>
+</footer>
+</div>
+</main>
+</div>
+<!-- Mobile Navigation Suppressed as per Task-Focus / Sub-page Rule -->
+</body></html>
