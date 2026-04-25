@@ -9,7 +9,7 @@ import router from "./router";
 import { noEncontradaHandler, erroresHandler } from "./middleware/errors";
 
 /* Variables */
-const port = 4000
+const port = process.env.PORT || 4000
 
 app.use(cors(corsConfig))
 app.use(express.json())
