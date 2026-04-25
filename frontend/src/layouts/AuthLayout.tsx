@@ -21,7 +21,7 @@ export default function AuthLayout() {
           <div className="w-full h-screen relative flex flex-col justify-center items-center bg-black/60">
             <div className="flex flex-col justify-center items-start gap-5 px-8">
               <div className="w-16 h-16">
-                <img src="/public/imagesUltimoInvitado/candado.svg" alt="candado"/>
+                <img src="/imagesUltimoInvitado/candado.svg" alt="candado"/>
               </div>
               <h1 className="text-4xl lg:text-7xl font-bold text-yellow-500">{title}</h1>
               <p className="text-white">{paragraph}</p>
