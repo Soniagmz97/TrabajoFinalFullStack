@@ -60,7 +60,7 @@ const UltimoInvitadoLevels = () => {
                   {niveles?.escenaCrimen === false && (
                     <div className="w-full h-full bg-black/60 flex flex-row justify-center items-center absolute inset-0 z-10">
                       <div className="w-20 h-20">
-                        <img src="/public/imagesUltimoInvitado/candadoGris.svg" alt="Bloqueado" />
+                        <img src="/imagesUltimoInvitado/candadoGris.svg" alt="Bloqueado" />
                       </div>
                     </div>
                   )}
@@ -78,7 +78,7 @@ const UltimoInvitadoLevels = () => {
                 {niveles?.coartada === false && (
                   <div className="w-full h-full bg-black/60 flex flex-row justify-center items-center absolute inset-0 z-10">
                     <div className="w-20 h-20">
-                      <img src="/public/imagesUltimoInvitado/candadoGris.svg" alt="Bloqueado" />
+                      <img src="/imagesUltimoInvitado/candadoGris.svg" alt="Bloqueado" />
                     </div>
                   </div>
                 )}
@@ -90,7 +90,7 @@ const UltimoInvitadoLevels = () => {
             {/* Parte superior */}
             <div className="w-full flex flex-row justify-between items-center">
               <div className="w-16 h-16 bg-red-400 p-2">
-                <img src="/public/imagesUltimoInvitado/danger.svg" alt="Urgente" />
+                <img src="/imagesUltimoInvitado/danger.svg" alt="Urgente" />
               </div>
               <span className="text-red-400 text-2xl">Urgente</span>
             </div>
