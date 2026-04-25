@@ -84,12 +84,12 @@ export default function MainView() {
             <ul className="flex flex-row gap-12">
               <li className="flex flex-row justify-center items-center">
                 <a href="mailto:soniagomezgarcia97@gmail.com" className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" target="_blanck">
-                  <img src="/public/gmail.svg" alt="gmail" />
+                  <img src="/gmail.svg" alt="gmail" />
                 </a>
               </li>
               <li className="flex flex-row justify-center items-center">
                 <a href="https://www.linkedin.com/in/sonia-gómez-garcía-2a364b329?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" target="_blanck">
-                  <img src="/public/linkedin.svg" alt="linkedin" /></a>
+                  <img src="/linkedin.svg" alt="linkedin" /></a>
               </li>
             </ul>
           </article>
