@@ -16,7 +16,7 @@ const Misiones = () => {
             <li className="bg-[#2b1c14] p-5 border-t-8 border-t-[#a3521e] relative hover:-translate-y-2 transition-all duration-200">
               <span className="bg-[#a3521e] p-2 absolute left-0 -top-4 text-[#e99a74] font-bold">Clasificado</span>
               <div className="w-full h-80 my-4">
-                <img src="/public/imagesUltimoInvitado/misionAsesinato.png" alt="El último invitado" className="w-full h-full object-cover" />
+                <img src="/imagesUltimoInvitado/misionAsesinato.png" alt="El último invitado" className="w-full h-full object-cover" />
               </div>
               <div className="w-full flex flex-col justify-center gap-2">
                 <h3 className="text-2xl text-yellow-500 font-bold">El último invitado</h3>
@@ -27,7 +27,7 @@ const Misiones = () => {
             <li className="bg-[#2b1c14] p-5 border-t-8 border-t-[#c49a2d] relative hover:-translate-y-2 transition-all duration-200">
               <span className="bg-[#c49a2d] p-2 absolute left-0 -top-4 text-amber-950 font-bold">Alta prioridad</span>
               <div className="w-full h-80 my-4">
-                <img src="/public/ImagesHospital/misionHospital.png" alt="El paciente olvidado" className="w-full h-full object-cover" />
+                <img src="/ImagesHospital/misionHospital.png" alt="El paciente olvidado" className="w-full h-full object-cover" />
               </div>
               <div className="w-full flex flex-col justify-center gap-2">
                 <h3 className="text-2xl text-yellow-500 font-bold">El Paciente Olvidado</h3>
@@ -39,7 +39,7 @@ const Misiones = () => {
             <li className="bg-[#2b1c14] p-5 border-t-8 border-t-red-700 relative hover:-translate-y-2 transition-all duration-200">
               <span className="bg-red-700 p-2 absolute left-0 -top-4 text-white font-bold">Peligroso</span>
               <div className="w-full h-80 my-4">
-                <img src="/public/ImagesTesoro/misionTesoro.png" alt="El eco del galeón" className="w-full h-full object-cover" />
+                <img src="/ImagesTesoro/misionTesoro.png" alt="El eco del galeón" className="w-full h-full object-cover" />
               </div>
               <div className="w-full flex flex-col justify-center gap-2">
                 <h3 className="text-2xl text-yellow-500 font-bold">El Eco del Galeón</h3>
@@ -51,7 +51,7 @@ const Misiones = () => {
             <li className="bg-[#2b1c14] p-5 border-t-8 border-t-[#5c5030] relative hover:-translate-y-2 transition-all duration-200">
               <span className="bg-[#5c5030] p-2 absolute left-0 -top-4 text-[#d9ceb2] font-bold">Alto riesgo</span>
               <div className="w-full h-80 my-4">
-                <img src="/public/ImagesLaboratorio/misionLaboratorio.png" alt="El protocolo Aegis" className="w-full h-full object-cover" />
+                <img src="/ImagesLaboratorio/misionLaboratorio.png" alt="El protocolo Aegis" className="w-full h-full object-cover" />
               </div>
               <div className="w-full flex flex-col justify-center gap-2">
                 <h3 className="text-2xl text-yellow-500 font-bold">El Protocolo Aegis</h3>

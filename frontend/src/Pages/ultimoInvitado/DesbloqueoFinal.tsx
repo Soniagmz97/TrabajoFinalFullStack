@@ -90,7 +90,7 @@ export default function DesbloqueoFinal() {
 
         {/* Panel misión cumplida */}
         {misionCumplida && (
-          <div className="w-[90%] sm:w-3/4 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center bg-[#1a120f] bg-[url('/public/imagesUltimoInvitado/cuadro.png')] bg-no-repeat bg-[length:100%_100%] z-10 py-12 sm:py-16">
+          <div className="w-[90%] sm:w-3/4 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center bg-[#1a120f] bg-[url('/imagesUltimoInvitado/cuadro.png')] bg-no-repeat bg-[length:100%_100%] z-10 py-12 sm:py-16">
             <h2 className="text-white text-3xl sm:text-5xl xl:text-6xl font-bold mb-6 text-center px-6">¡Misión cumplida!</h2>
             <div className="flex flex-row justify-center gap-8 sm:gap-16 xl:gap-28">
               <Link to={'/main'} className="bg-yellow-500 text-[#1a120f] font-bold px-4 py-2 sm:px-5 sm:py-3">Home</Link>
